@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Media/Bitmap.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="main" id="home">
+    <header class="desktop-header">
+      <a href="#home">
+        <div class="profile"><img src="Media/Bitmap.jpg" alt="User Logo" /></div>
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#home" id="blog">BLOG</a></li>
+          <li><a href="#about" id="about">ABOUT</a></li>
+          <li><a href="#projects" id="projects">PROJECTS</a></li>
+        </ul>
+      </nav>
+      <a href="#" onclick="changeBackground()">
+        <div class="theme"><i class="fas fa-palette"></i></div>
+      </a>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="intro" id="intro">
+          <h1><span id="hey">Hey</span> <span id="there">there,</span> <span id="im">I'm</span> <span id="asmit">Asmit</span></h1>
+          <h1><span id="welcome">Welcome</span> <span id="to">to</span> <span id="my">my</span> <span id="portfolio">portfolio</span></h1>
+        </div>
+        <div class="tagline">
+          <p>
+            I’m a minimalist UI/UX designer based in Mumbai, passionate about
+            creating impactful designs that elevate user experiences and
+            inspire innovation in the digital world.
+          </p>
+        </div>
+        <div class="social-icons" id="projects">
+          <a href="https://www.linkedin.com/in/asmit-vishwakarma-5b3629259/" target="_blank" class="icon" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Asmitbv21" target="_blank" class="icon" id="github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://dribbble.com/asmitbv" target="_blank" class="icon" id="dribble"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div class="projects">
+        <h1>Projects</h1>
+        <br />
+        <div class="project-cards">
+          <div class="card" id="card1">
+            <img src="Media/Frame 13.png" alt="Project 1" height="200px" width="auto" />
+            <div class="card-content">
+              1
+              <h3>UI for a attendance app</h3>
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+          <!-- <div class="card" id="card2">
+              <img
+                src="Final_2.jpg"
+                alt="Project 1"
+                height="200px"
+                width="auto"
+              />
+              <div class="card-content">2
+                <h3>Project Title 1</h3>
+                <p>UI/UX Design</p>
+              </div>
+            </div> -->
+          <!-- <div class="card" id="card3">
+              <img
+              src="Project.png"
+                alt="Project 1"
+                height="200px"
+                width="auto"
+              />
+              <div class="card-content">3
+                <h3>Project Title 1</h3>
+                <p>UI/UX Design</p>
+              </div>
+            </div> -->
+          <div class="card" id="card4">
+            <img src="Media/Frame 13.png" alt="Project 1" height="200px" width="auto" />
+            <div class="card-content">
+              4
+              <h3>Project Title 1</h3>
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+          <!-- <div class="card" id="card5">
+              <img
+              src="Project.png"
+                alt="Project 1"
+                height="200px"
+                width="auto"
+              />
+              <div class="card-content">5
+                <h3>Project Title 1</h3>
+                <p>UI/UX Design</p>
+              </div> -->
+        </div>
+        <div class="card" id="card6">
+          <img src="Media/Project.png" alt="Project 1" height="200px" width="auto" />
+          <div class="card-content">
+            6
+            <h3>Project Title 1</h3>
+            <p>UI/UX Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="end_title">
+          <h1>Asmit Vishwakarma</h1>
+            <h4>Email: asmitbv@gmail.com</h4>
+            <h4>Phone: +91 8356057791</h4>
+            <h4>Address: Naigoan West, Mumbai, Maharashtra, India</h4>
+          <br />
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/asmit-vishwakarma-5b3629259/" target="_blank" class="icon" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Asmitbv21" target="_blank" class="icon" id="github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://dribbble.com/asmitbv" target="_blank" class="icon" id="dribble"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <br />
+          <p>© 2025 Asmit Vishwakarma. All rights reserved.</p>
+        </div>
+        <!-- <div class="navigation">
+          <div class="navi">
+            <h1>General</h1>
+            <div class="navi_links">
+              <a href="#home">Home</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contacts</a>
+            </div>
+          </div>
+        </div> -->
+        <br>
+        <div class="activities">
+          <h1>THANK YOU</h1> 
+          <video src="Media/infinity3.mp4" autoplay loop muted height="250px"></video>
+          <!-- <i class="fab fa-instagram"></i>
+          <i class="fab fa-figma"></i>
+          <i class="fab fa-whatsapp"></i> -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
