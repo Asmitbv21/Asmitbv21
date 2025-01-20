@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 span{
@@ -73,6 +74,7 @@ header img {
 .profile:hover {
     box-shadow: 8px 0 5px #0000003d, inset 5px 0 10px #ffffff;
     transform: scale(1.05);
+    
 }
 
 .theme {
@@ -150,7 +152,7 @@ nav a:hover {
     text-align: center;
     height: 80vh;
     padding: 20px;
-    margin: 150px 0;
+    margin: 100px 0;
 }
 
 .hero .intro {
@@ -207,34 +209,39 @@ nav a:hover {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #eeff6d;
     border-radius: 20px;
     padding: 10px;
+    transition: all 0.3s ease-out;
 }
+
 
 .project-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+    grid-auto-flow: dense;
     width: 100%;
     padding: 1.5rem 0;
 }
 
 #card1 {
-    grid-column: 2;
-    /* First column */
+    grid-row: 1/2;
     background-color: #ff8f6d;
 }
 
 #card4 {
-    grid-row: 1;
     background-color: #eeff6d;
 }
-
+/* 
 #card6 {
-    grid-row: 1;
     background-color: #ffd36d;
-}
+} */
 
 /* Improve responsive behavior */
 @media (max-width: 768px) {
@@ -342,11 +349,11 @@ nav a:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(-45deg, #1d1d1d, #ffffff);
+    background: linear-gradient(-45deg, #000000, #ffffff);
 }
 
 
