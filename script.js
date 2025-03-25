@@ -1,4 +1,6 @@
 // Function to toggle between light and dark themes
+alert("Please be patient, the images may take some time to load.");
+
 function changeBackground() {
     const body = document.body;
     const icons = document.querySelectorAll('.social-icons i');
@@ -30,3 +32,22 @@ function changeBackground() {
         });
     }
 }
+
+function openModal(title, imageSrc, description) {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-image").src = imageSrc;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal").style.display = "flex";
+}
+
+function openProfileModal(name,about, profile ) {
+    document.getElementById("modal-name").innerText = name;
+    document.getElementById("modal-about").innerText = about;
+    document.getElementById("modal-profile").src = profile;
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
